@@ -16,7 +16,7 @@ public class IndexController {
     
     @RequestMapping("/")
     public String handle(HttpServletRequest request, ModelMap model) {
-        return "redirect:/index";
+        return "forward:/index";
     }
     
     @RequestMapping("/index")
