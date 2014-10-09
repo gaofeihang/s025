@@ -30,5 +30,25 @@ public class IndexController {
         model.put("name", name);
         model.put("date", new Date());
     }
+    
+    @RequestMapping("/test/index")
+    public void test(HttpServletRequest request, ModelMap model, String name) {
+        if (name == null) {
+            name = "World";
+        }
+        
+        model.put("name", name);
+        model.put("date", new Date());
+    }
+    
+    @RequestMapping("/examples/index")
+    public void examples(HttpServletRequest request, ModelMap model, String name) {
+        if (name == null) {
+            name = "World";
+        }
+        
+        model.put("name", name);
+        model.put("date", new Date());
+    }
 
 }
