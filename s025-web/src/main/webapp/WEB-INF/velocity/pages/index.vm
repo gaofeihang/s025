@@ -17,36 +17,7 @@
 		
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <style>
-      #map-canvas {
-		width: 960px;
-        height: 600px;
-        margin: 0px auto;
-        padding: 0px
-		align: center;
-      }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script>
-var map;
-function initialize() {
-  var mapOptions = {
-    zoom: 2,
-    center: new google.maps.LatLng(0, 123.43618)
-  };
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
-	  
-  var marker = new google.maps.Marker({
-      position: center, 
-      map: map, 
-      title:"Hello World!"
-  }); 
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
+#parse("control/baiduMap.vm")
   </head>
 
   <body>
@@ -74,8 +45,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Placed at the end of the document so the pages load faster 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    -->
     <script src="./static/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
