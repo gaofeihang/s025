@@ -1,5 +1,7 @@
 package org.s025.web.controller;
 
+import java.util.Date;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
@@ -26,6 +28,7 @@ public class IndexController {
         }
         
         model.put("name", name);
+        model.put("date", new Date());
     }
 
 }
