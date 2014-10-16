@@ -17,7 +17,11 @@
 		
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-#parse("control/baiduMap.vm")
+#if($!usingGoogle)
+	#parse("control/googleMap.vm")
+#else	
+	#parse("control/baiduMap.vm")
+#end
   </head>
 
   <body>
