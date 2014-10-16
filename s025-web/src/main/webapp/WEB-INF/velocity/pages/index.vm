@@ -1,27 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
     <title>S025.org</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="./static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="./static/css/starter-template.css" rel="stylesheet">
-		
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-#if($!usingGoogle)
-	#parse("control/googleMap.vm")
-#else	
-	#parse("control/baiduMap.vm")
-#end
   </head>
 
   <body>
@@ -33,7 +15,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
@@ -44,14 +26,8 @@
         <p class="lead">Northeast Yucai School
 	    <br>Shenyang China</p>
       </div>
+    </div>
 
-    </div><!-- /.container -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    -->
-    <script src="./static/bootstrap/js/bootstrap.min.js"></script>
+#parse("control/map/globalMap.vm")
   </body>
 </html>

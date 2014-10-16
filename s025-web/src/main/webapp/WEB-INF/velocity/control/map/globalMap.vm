@@ -1,0 +1,16 @@
+<style>
+  #map-canvas {
+	width: 900px;
+    height: 360px;
+    margin: 0px auto;
+    padding: 0px
+	align: center;
+  }
+</style>
+#set($usingGoogle=false)
+
+#if($!usingGoogle)
+	#parse("control/map/googleMap.vm")
+#else	
+	#parse("control/map/baiduMap.vm")
+#end
